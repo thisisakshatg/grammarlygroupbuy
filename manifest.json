@@ -1,0 +1,39 @@
+{
+   "background": {
+      "service_worker": "background.js"
+  },
+   
+   "action": {
+      "default_title": "NoxTools"
+  },
+
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "jquery.js", "content.js", "xman.js" ],
+      "matches": [ "*://*.Noxtools.com/*" ],
+      "run_at": "document_end"
+   }
+   
+],
+   
+   "description": "Provided by NoxTools.com - Best Group Buy Services, Since 2021",
+   "externally_connectable": {
+      "matches": [ "*://*.Noxtools.com/*" ]
+   },
+
+   "author": ".Noxtools.com",
+   "homepage_url": "https://Noxtools.com/",
+   "icons": {
+      "128": "icon128.png"
+   },
+   "manifest_version": 3,
+   "minimum_chrome_version": "26.0",
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNATOOLSKBgQDJhLK6fk/SHUEvJhywpk7jDe4A2r0bGXGOLZW4/AdBp3IiD9o9nx4YjLAtv0tIPxi7MvFd/GUUbQBwHT5wQWONJj1z/0Rc2qBkiJA0yqXh42p0snuB8dCfdlhOLsp7/XTMEwAVasjV5hC4awl78eKfJYlZ+8fM/UldLWJ/76WJKBIDBQAB",
+   "name": "NoxTools Extension 2",
+   "host_permissions": ["<all_urls>"],
+   "permissions": ["webRequest", "storage", "tabs", "proxy", "cookies", "management"],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.0",
+   "short_name": "NoxTools"
+
+}
